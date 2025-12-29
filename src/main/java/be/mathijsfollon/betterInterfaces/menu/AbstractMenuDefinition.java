@@ -82,7 +82,7 @@ public abstract class AbstractMenuDefinition implements MenuDefinition, MenuEven
         Player player = ctx.getPlayer().orElse(null);
         if (player == null) {
             throw new IllegalStateException("Player must be set in MenuOpenContextStore");
-        }
+    }
 
         MenuService service = ctx.get("menu-service", MenuService.class).orElse(null);
         if (service == null) {

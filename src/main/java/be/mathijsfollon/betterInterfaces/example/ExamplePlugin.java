@@ -225,7 +225,7 @@ public class ExamplePlugin extends JavaPlugin implements Listener, CommandExecut
         // The getResult() method returns a CompletableFuture that completes when the menu opens
         session.getResult().thenAccept(menuOpenEvent -> {
             // This code runs when the menu has been opened
-            
+
             MenuOpenContextStore context = menuOpenEvent.getContext();
 
             // Retrieve data from context (typed get with Optional)

@@ -44,22 +44,26 @@ Or if using Maven, add to your `pom.xml`:
 
 ### Basic Setup
 
-1. **Get the MenuService**: BetterInterfaces provides a `MenuService` that manages all menus. Get it from the BetterInterfaces plugin:
+1. **Get the MenuService**: BetterInterfaces provides a `MenuService` that manages all menus. Load it using the Bukkit Services API:
 
 ```java
 import be.mathijsfollon.betterInterfaces.api.MenuService;
+import org.bukkit.Bukkit;
 
 public class YourPlugin extends JavaPlugin {
     private MenuService menuService;
     
     @Override
     public void onEnable() {
-        // Get the MenuService from BetterInterfaces
-        Plugin betterInterfaces = getServer().getPluginManager().getPlugin("BetterInterfaces");
-        if (betterInterfaces != null) {
-            // Access the service (implementation may vary)
-            menuService = /* get service from BetterInterfaces */;
+        // Load the MenuService from Bukkit Services API
+        menuService = Bukkit.getServicesManager().load(MenuService.class);
+        
+        if (menuService == null) {
+            getLogger().warning("MenuService not found! Make sure BetterInterfaces is installed and enabled.");
+            return;
         }
+        
+        // Now you can use menuService
     }
 }
 ```
