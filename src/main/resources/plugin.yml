@@ -1,0 +1,13 @@
+name: BetterInterfaces
+version: '1.0.0'
+main: be.mathijsfollon.betterInterfaces.BetterInterfaces
+api-version: '1.21.11'
+load: STARTUP
+authors: [ Mathijs Follon ]
+description: A menu system for Bukkit plugins
+
+commands:
+  examples:
+    description: Opens the menu showcase or a specific example menu
+    usage: /<command> [menu]
+    aliases: [menu, menuexample]
