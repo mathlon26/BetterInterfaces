@@ -1,5 +1,5 @@
 name: BetterInterfaces
-version: '1.0.0'
+version: '1.0.1'
 main: be.mathijsfollon.betterInterfaces.BetterInterfaces
 api-version: '1.21.11'
 load: STARTUP
