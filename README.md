@@ -2,6 +2,7 @@
 
 A powerful and flexible menu system for Minecraft plugins built on the Bukkit/Spigot API. BetterInterfaces provides an easy-to-use, event-driven API for creating dynamic GUIs with features like menu navigation, pageable menus, event handling, and more.
 
+This documentation is not battle tested, please create as much issues as you want and I will try to fix it as soon as possible.
 
 ## Table of Contents
 
@@ -22,13 +23,13 @@ A powerful and flexible menu system for Minecraft plugins built on the Bukkit/Sp
 
 ## Getting Started
 
-### Dependencies
+### Dependencies (comming soon)
 
 Add BetterInterfaces as a dependency in your `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'be.mathijsfollon:BetterInterfaces:1.0.0'
+    implementation 'be.mathijsfollon:BetterInterfaces:1.0.1'
 }
 ```
 
