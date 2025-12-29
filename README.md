@@ -28,7 +28,7 @@ Add BetterInterfaces as a dependency in your `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'be.mathijsfollon:BetterInterfaces:1.0.0'
+    implementation 'be.mathijsfollon:BetterInterfaces:1.0.1'
 }
 ```
 
@@ -38,7 +38,7 @@ Or if using Maven, add to your `pom.xml`:
 <dependency>
     <groupId>be.mathijsfollon</groupId>
     <artifactId>BetterInterfaces</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
