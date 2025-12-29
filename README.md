@@ -23,7 +23,7 @@ This documentation is not battle tested, please create as much issues as you wan
 
 ## Getting Started
 
-### Dependencies
+### Dependencies (comming soon)
 
 Add BetterInterfaces as a dependency in your `build.gradle`:
 
